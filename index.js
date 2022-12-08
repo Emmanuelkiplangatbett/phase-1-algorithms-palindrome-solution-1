@@ -1,5 +1,14 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  let vowels = word.split("");
+  let reversedVowels = vowels.reverse();
+  let reverseString = reversedVowels.join("");
+
+  if(word === reverseString){
+    return true;
+  }else{
+    return false;
+  }
 }
 
 /* 
